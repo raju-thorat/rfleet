@@ -8,10 +8,10 @@ metadata:
 spec:
   ports:
   - port: 81
-    protocol: TCP
+    nodePort: 31000
     targetPort: 81
   selector:
     app: nginx1
-  type: LoadBalancer
+  type: NodePort
 status:
   loadBalancer: {}
